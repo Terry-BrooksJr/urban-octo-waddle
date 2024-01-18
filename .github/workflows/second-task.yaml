@@ -1,0 +1,8 @@
+name: listen for issues actions
+on: issues
+jobs:
+    output:
+        runs-on: ubuntu-latest
+        steps:
+         - name: outout GH Object
+           run: echo $"{{ toJson(github) }}"
